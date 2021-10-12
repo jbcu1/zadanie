@@ -116,7 +116,7 @@ func (info *Data)GetID() primitive.ObjectID{
 func  main() {
 	var data Data
 	var updateData UpdateData
-	Client, err := mongo.NewClient(options.Client().ApplyURI("mongodb+srv://jbcui:21fpvwWVCoVPtz9fiy25@cluster0.1a0gn.mongodb.net/zadanie?retryWrites=true&w=majority", ))
+	Client, err := mongo.NewClient(options.Client().ApplyURI("mongodb+srv://username.mongodb.net/zadanie?retryWrites=true&w=majority", ))
 	if err != nil {
 		fmt.Errorf("some error %v", err)
 	}
